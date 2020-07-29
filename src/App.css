@@ -2,15 +2,17 @@
   box-sizing: border-box;
 }
 .add-user {
-  background-color: #282c34;
+  background-color: #fcf6f5ff;
   min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   text-align: center;
-  color: white;
+  color: #2bae66ff;
 }
 
 .inputStyle input{
@@ -19,8 +21,8 @@
   text-align:center;
   background:none;
   border:none;
-  border-bottom:.1em solid hsla(0,0%,100%,.9);
-  color:#fff;
+  border-bottom:.1em solid #2bae66ff;
+  color:#282c34;
 }
 
 .inputStyle input:focus{
@@ -45,22 +47,35 @@
 }
 
 .listStyle{
-  width: 45%;
+  width: 100%;
   float: left;
-  margin-right: 50px;
+  text-align: left;
 }
 
 .listStyle p {
   padding-bottom: 20px;
-  border-bottom: .1em solid hsla(0,0%,100%,.9);
+  padding-left: 30px;
+  border-bottom: .1em solid #2bae66ff;
 }
 
-.listStyle ul {
+.listStyle ol {
+  line-height: 110%;
+  width: 55em;
+}
+
+.olNone {
   list-style-type: none;
 }
+.listStyle ol li{
+  width: 20em;
+  float: left;
+  font-size: 14px;
+  color: #282c34;
+  padding-left: 10px;
+}
 
-.listStyle ul li{
-  text-align: left;
-  font-size: 12px;
+.listElementNone{
+  padding-left: 0;
+  list-style-type: none;
 }
 
